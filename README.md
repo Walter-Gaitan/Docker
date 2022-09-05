@@ -23,5 +23,5 @@ docker build -t docker .
 3. Run the image with the following command:
 
 ```bash
-docker run -d -p 80:80 docker
+docker run -d --name nginx -p 8888:80 docker
 ```
