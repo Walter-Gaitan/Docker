@@ -12,10 +12,22 @@ providing both CI / CD for the image and the repository.
 - [x] Publish the image into a public registry
 - [x] Provide CI / CD for the image and the repository
 
-## Usage
+## Steps
 
-### Build
+1. Create a file and name it Dockerfile in your local directory
+2. Build the image with the following command:
 
 ```bash
-docker build -t waltergsteven/docker .
+docker build -t myimage .
 ```
+3. Run the image with the following command:
+
+```bash
+docker run -d -p 8080:80 docker
+```
+4. run the image with the following command:
+
+```bash
+docker run --name nginx -d -p 8080:80 docker   # run the image
+```
+5. go to your browser and type localhost:8080
