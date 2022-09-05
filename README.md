@@ -18,16 +18,10 @@ providing both CI / CD for the image and the repository.
 2. Build the image with the following command:
 
 ```bash
-docker build -t myimage .
+docker build -t docker .
 ```
 3. Run the image with the following command:
 
 ```bash
-docker run -d -p 8080:80 docker
+docker run -d -p 80:80 docker
 ```
-4. run the image with the following command:
-
-```bash
-docker run --name nginx -d -p 8080:80 docker   # run the image
-```
-5. go to your browser and type localhost:8080
