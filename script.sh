@@ -16,4 +16,4 @@ docker ps
 ## check website
 echo "Checking website"
 sleep 1
-ping localhost:5000
+curl -I http://localhost:5000

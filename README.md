@@ -54,6 +54,7 @@ You can pull the image using the following command:
 ```bash
 docker pull waltergsteven/website:latest
 ```
+You can also find the image in the [Docker Hub](https://hub.docker.com/r/waltergsteven/website)
 
 ## CI/CD
 
