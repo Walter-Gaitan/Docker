@@ -16,3 +16,4 @@ jobs:
         changelog_structure: "**{{messageHeadline}}** {{author}}\n"
         package_root: "/website"
         tag_prefix: "v"
+        version: "${{ steps.previous_step.outputs.version }}"
