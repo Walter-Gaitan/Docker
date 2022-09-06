@@ -1,18 +1,16 @@
-name: Automatic PR
+name: delete branch on close pr
 on:
-  push:
-    branches: ["develop"]
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'releases/**'
 
 jobs:
-  create-pull-request:
+  delete-branch:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-      - name: pull-request
-        uses: repo-sync/pull-request@v2
-        with:
-          destination_branch: "main"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          pr_label: "feature, automated pr"
-          pr_title: "Automatic PR"
+      - name: delete branch
+        uses: SvanBoxel/delete-merged-branch@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
