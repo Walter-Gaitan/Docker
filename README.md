@@ -34,3 +34,12 @@ docker ps
 
 5. Open your browser and go to http://localhost:8888 the website will look like this:
 ![](assets/website.png)
+
+6. Push the image to Docker Hub with the following command:
+
+```bash
+docker push <your username>/website
+```
+
+7. Go to Docker Hub and check the image is there:
+![](assets/dockerhub.png)
