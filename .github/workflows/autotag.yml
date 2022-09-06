@@ -16,3 +16,5 @@ jobs:
         strategy: docker
         tag_prefix: "v"
         root: "/"
+        commit_message_template: "({{sha}} by {{author}}) {{message}}"
+        version: "${{ steps.previous_step.outputs.version }}"
