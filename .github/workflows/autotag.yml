@@ -15,3 +15,4 @@ jobs:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         strategy: docker
         tag_prefix: "v"
+        root: "/"
