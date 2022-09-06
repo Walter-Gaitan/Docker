@@ -1,7 +1,8 @@
 name: Automatic PR
 on:
   push:
-    branches: ["develop",]
+    branches: 
+      - "release/*"
 
 jobs:
   create-pull-request:

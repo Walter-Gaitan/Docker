@@ -14,16 +14,3 @@ docker ps
 echo "Checking website"
 ping localhost:8888
 
-## stop docker image
-sleep 60
-echo "Stopping docker image"
-docker stop nginx
-
-## remove docker container
-echo "Removing docker container"
-docker rm nginx
-
-## remove docker image
-echo "Removing docker image"
-docker rm website
-
