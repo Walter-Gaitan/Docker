@@ -15,3 +15,4 @@ jobs:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         changelog_structure: "**{{messageHeadline}}** {{author}}\n"
         package_root: "/website"
+        tag_prefix: "v"
