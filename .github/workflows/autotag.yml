@@ -14,4 +14,4 @@ jobs:
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         changelog_structure: "**{{messageHeadline}}** {{author}}\n"
-        package_root: "/website
+        package_root: "/website"
