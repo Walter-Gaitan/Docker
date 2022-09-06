@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:latest
 
 LABEL maintainer="Walter Gaitan "
 LABEL project="node-web"
