@@ -18,10 +18,10 @@ providing both CI / CD for the image and the repository.
 2. Build the image with the following command:
 
 ```bash
-docker build -t docker .
+docker build -t website .
 ```
 3. Run the image with the following command:
 
 ```bash
-docker run -d --name nginx -p 8888:80 docker
+docker run -d --name nginx -p 8888:80 website
 ```
