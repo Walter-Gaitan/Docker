@@ -14,6 +14,7 @@ providing both CI / CD for the image and the repository.
 
 ## Steps
 
+> **Note**
 > you can run the necessary commands by using the script.sh file: `./script.sh`
 
 1. Create a file and name it Dockerfile in your local directory
