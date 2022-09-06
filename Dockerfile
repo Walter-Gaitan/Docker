@@ -7,7 +7,7 @@ EXPOSE 4000
 
 COPY ./website /app
 
-WORKDIR /app/hello-bootcamp
+WORKDIR /app/website
 
 RUN npm install
 
