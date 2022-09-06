@@ -1,5 +1,14 @@
-FROM nginx:latest
+FROM node:alpine
 
-COPY ./website /usr/share/nginx/html
+LABEL maintainer="Walter Gaitan "
+LABEL project="node-web"
 
-EXPOSE 80
+EXPOSE 4000
+
+COPY ./website /app
+
+WORKDIR /app/hello-bootcamp
+
+RUN npm install
+
+CMD [ "npm", "run", "start" ]
