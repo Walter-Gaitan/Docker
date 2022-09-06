@@ -14,6 +14,7 @@ providing both CI / CD for the image and the repository.
 
 ## Steps
 
+> **Note**
 > you can run the necessary commands by using the script.sh file: `./script.sh`
 
 1. Create a file and name it Dockerfile in your local directory
@@ -22,10 +23,11 @@ providing both CI / CD for the image and the repository.
 ```bash
 docker build -t website .
 ```
+
 3. Run the image with the following command:
 
 ```bash
-docker run -d --name website -p 5000:80 website
+docker run -d --name website -p 5000:4000 waltergsteven/website
 ```
 The name of the container is website and the port is 5000
 
@@ -41,7 +43,7 @@ docker ps
 6. Push the image to Docker Hub with the following command:
 
 ```bash
-docker push <your username>/website
+docker push waltergsteven/website
 ```
 
 7. Go to Docker Hub and check the image is there:
@@ -52,6 +54,7 @@ You can pull the image using the following command:
 ```bash
 docker pull waltergsteven/website:latest
 ```
+You can also find the image in the [Docker Hub](https://hub.docker.com/r/waltergsteven/website)
 
 ## CI/CD
 
