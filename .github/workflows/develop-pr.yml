@@ -1,7 +1,8 @@
 name: Automatic PR
 on:
   push:
-    branches: ["develop",]
+    branches: 
+      - "release/*"
 
 jobs:
   create-pull-request:
@@ -12,7 +13,7 @@ jobs:
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:
-          destination_branch: "main"
+          destination_branch: "develop"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "feature, automated pr"
           pr_title: "Automatic PR"

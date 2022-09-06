@@ -49,3 +49,16 @@ You can pull the image using the following command:
 ```bash
 docker pull waltergsteven/website:latest
 ```
+
+8. Finally, you can run the necessary commands by using the script.sh file: `./script.sh`
+
+## CI/CD
+
+The CI/CD is done using GitHub Actions, the workflow is the following:
+
+1. When a pull request from the release branch to the develop branch is created, the branch workflow is triggered.
+2. The branch workflow will delete the release branch once the pull request is merged.
+3. When a push is made to the develop branch, the pr workflow is triggered.
+4. The pr workflow will create a pull request from the develop branch to the release branch.
+5. Once the pull request is merged, the docker-image workflow is triggered. 
+6. The docker-image workflow will build the image and push it to Docker Hub.
