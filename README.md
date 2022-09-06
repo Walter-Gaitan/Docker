@@ -43,3 +43,9 @@ docker push <your username>/website
 
 7. Go to Docker Hub and check the image is there:
 ![](assets/dockerhub.png)
+
+You can pull the image using the following command:
+
+```bash
+docker pull waltergsteven/website:latest
+```
