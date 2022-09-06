@@ -23,10 +23,11 @@ providing both CI / CD for the image and the repository.
 ```bash
 docker build -t website .
 ```
+
 3. Run the image with the following command:
 
 ```bash
-docker run -d --name website -p 5000:80 website
+docker run -d --name website -p 5000:4000 waltergsteven/website
 ```
 The name of the container is website and the port is 5000
 
@@ -42,7 +43,7 @@ docker ps
 6. Push the image to Docker Hub with the following command:
 
 ```bash
-docker push <your username>/website
+docker push waltergsteven/website
 ```
 
 7. Go to Docker Hub and check the image is there:

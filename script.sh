@@ -1,12 +1,12 @@
 ## build docker image
-echo "Building docker image"
+echo "Pulling docker image"
 sleep 1
-docker build -t website .
+docker pull waltergsteven/website:latest
 
 ## run docker image
 echo "Running docker image"
 sleep 1
-docker run -d --name nginx -p 8888:80 website
+docker run -d --name website -p 5000:4000 waltergsteven/website
 
 ## show docker image
 echo "Showing docker image"
@@ -16,5 +16,4 @@ docker ps
 ## check website
 echo "Checking website"
 sleep 1
-ping localhost:8888
-
+ping localhost:5000
