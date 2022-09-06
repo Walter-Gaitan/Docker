@@ -25,3 +25,12 @@ docker build -t website .
 ```bash
 docker run -d --name nginx -p 8888:80 website
 ```
+
+4. Check the container is running with the following command:
+
+```bash
+docker ps
+```
+
+5. Open your browser and go to http://localhost:8888 the website will look like this:
+![](assets/website.png)
