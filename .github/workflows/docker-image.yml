@@ -40,6 +40,5 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: waltergsteven/latest
+          push: true
+          tags: waltergsteven/website:latest
