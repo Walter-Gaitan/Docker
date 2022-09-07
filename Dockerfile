@@ -2,6 +2,7 @@ FROM node:alpine
 
 LABEL maintainer="Walter Gaitan "
 LABEL project="node-web"
+LABEL version=2.0.1
 
 EXPOSE 4000
 
