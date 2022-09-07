@@ -12,7 +12,7 @@ providing both CI / CD for the image and the repository.
 - [x] Publish the image into a public registry
 - [x] Provide CI / CD for the image and the repository
 
-## Steps
+## Image creation process
 
 > **Note**
 > you can run the necessary commands by using the script.sh file: `./script.sh`
@@ -49,13 +49,21 @@ docker push waltergsteven/website
 7. Go to Docker Hub and check the image is there:
 ![](assets/dockerhub.png)
 
-You can pull the image using the following command:
+## Run the image in your local machine
+
+1. Pull the image from Docker Hub with the following command:
 
 ```bash
 docker pull waltergsteven/website:latest
 ```
 You can also find the image in the [Docker Hub](https://hub.docker.com/r/waltergsteven/website)
 
+2. Run the image with the following command:
+
+```bash
+docker run -d --name website -p 5000:4000 waltergsteven/website
+```
+The name of the container is website and the port is 5000 use http://localhost:5000 to see the website in your browser
 ## CI/CD
 
 The CI/CD is done using GitHub Actions, the workflow is the following:
