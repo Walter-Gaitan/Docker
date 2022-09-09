@@ -6,6 +6,9 @@ week 4 of Applaudo Studios Program
 Develop a docker container of a web server and publish it into a public registry,
 providing both CI / CD for the image and the repository.
 
+> **Note**
+> you can run the necessary commands  to run the container by using the script.sh file: `./script.sh`
+
 ## Requirements
 
 - [x] Create a docker container of a web server
@@ -13,9 +16,6 @@ providing both CI / CD for the image and the repository.
 - [x] Provide CI / CD for the image and the repository
 
 ## Image creation process
-
-> **Note**
-> you can run the necessary commands by using the script.sh file: `./script.sh`
 
 1. Create a file and name it Dockerfile in your local directory
 2. Build the image with the following command:
